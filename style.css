@@ -21,7 +21,11 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+#container::-webkit-scrollbar {
+    display: none;
 }
 
 #list-header {
@@ -106,7 +110,12 @@ li span {
     font-size: 12px;
     flex-grow: 1;
     word-wrap: break-word;
-    overflow-y: scroll;
+    overflow-y: auto;
+    width: 200px;
+}
+
+li span::-webkit-scrollbar{
+    display: none;
 }
 
 #editBtn,
